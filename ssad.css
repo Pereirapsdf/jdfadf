@@ -1,1 +1,12 @@
-
+header {
+    background-color: #f8f9fa;
+  }
+  
+  .progress-bar {
+    background-color: #0d6efd;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
