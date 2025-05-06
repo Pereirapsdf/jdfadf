@@ -1,12 +1,43 @@
-header {
-    background-color: #f8f9fa;
+#inicio {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  animation: fadeIn 1.5s ease-in;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  #inicio {
+    min-height: auto;
+    padding-top: 2rem;
   }
-  
-  .progress-bar {
-    background-color: #0d6efd;
+}
+
+/* Animaciones personalizadas */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  footer a:hover {
-    text-decoration: underline;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease-out;
+}
+}
+}
